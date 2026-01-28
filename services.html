@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services | Mahesh</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #03040f;
+            color: white;
+        }
+        nav {
+            width: 100%;
+            background: #0a0b24;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            list-style: none;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #9c6bff;
+        }
+        .section {
+            padding: 130px 70px;
+        }
+        .service-item {
+            background: #141630;
+            padding: 18px;
+            border-radius: 8px;
+            margin: 12px 0;
+        }
+        /* ==============================
+   MOBILE (Small Phones)
+   ============================== */
+@media (max-width: 480px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 110px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /* Project Cards + About Boxes */
+    .project-card,
+    .about-box,
+    .service-item,
+    .contact-box {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    /* Images */
+    .project-card img,
+    .profile-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* About Page Layout */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin: 0 auto;
+    }
+}
+
+/* ==============================
+   TABLETS (Portrait & Landscape)
+   ============================== */
+@media (max-width: 768px) {
+
+    nav ul {
+        gap: 25px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+    .section {
+        padding: 120px 40px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 200px;
+        margin: 0 auto 20px;
+    }
+}
+
+/* ==============================
+   SMALL LAPTOPS
+   ============================== */
+@media (max-width: 1024px) {
+
+    nav ul {
+        gap: 30px;
+    }
+
+    .section {
+        padding: 130px 50px;
+    }
+
+    .project-card img {
+        max-width: 450px;
+    }
+}
+
+/* ==============================
+   LARGE SCREENS (4K Support)
+   ============================== */
+@media (min-width: 1600px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    .section {
+        padding: 150px 200px;
+    }
+
+    .project-card img {
+        max-width: 700px;
+    }
+
+    nav a {
+        font-size: 22px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="section">
+    <h1>My Services</h1>
+
+    <div class="service-item">Frontend Development (HTML, CSS, JavaScript)</div>
+    <div class="service-item">Backend Development (Java, MySQL, REST APIs)</div>
+    <div class="service-item">Full-Stack Web Applications</div>
+    <div class="service-item">Bug Fixing & Debugging</div>
+    <div class="service-item">Cybersecurity Basics (VAPT, Burp Suite, SQLMap)</div>
+</div>
+
+</body>
+</html>
